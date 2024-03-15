@@ -76,6 +76,12 @@
     </dependency>
 
     <dependency>
+      <groupId>io.netty</groupId>
+      <artifactId>netty-transport-native-epoll</artifactId>
+      <version>4.1.107.Final</version>
+    </dependency>
+
+    <dependency>
       <groupId>org.apache.kafka</groupId>
       <artifactId>connect-api</artifactId>
       <version>${version.kafka}</version>
@@ -276,10 +282,6 @@ Typical use cases are microservices orchestration or processes triggered by cert
               </supportSummary>
               <supportUrl>https://github.com/camunda-community-hub/kafka-connect-zeebe</supportUrl>
               <supportLogo>logos/camunda.png</supportLogo>
-
-              <excludes>
-                <exclude>io.netty:*</exclude>
-              </excludes>
 
               <ownerUsername>camunda</ownerUsername>
               <ownerType>organization</ownerType>
